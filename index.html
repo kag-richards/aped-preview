@@ -473,9 +473,6 @@
   .light-field textarea { resize: vertical; min-height: 100px; }
 
   /* ─── DONATE PAGE ─── */
-  .donate-hero { background: var(--teal); padding: 96px 80px; text-align: center; }
-  .donate-hero h1 { font-family: var(--serif); font-size: 52px; color: var(--white); margin-bottom: 16px; }
-  .donate-hero p { color: rgba(255,255,255,0.7); font-size: 18px; max-width: 520px; margin: 0 auto; }
   .donate-body { padding: 80px; display: grid; grid-template-columns: 1fr 400px; gap: 80px; align-items: start; }
   .amount-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 24px; }
   .amount-btn {
@@ -665,8 +662,6 @@
     .impact-summary-tile { border-right: none; border-bottom: 1px solid var(--gray-100); }
     .story-strip, .spotlight, .about-hero, .territory-inner, .contact-hero, .donate-body, .strategic-priority { grid-template-columns: 1fr; gap: 32px; padding: 64px 24px; }
     section, .perf-section, .community-impact, .challenges, .outlook, .why-support, .team-section, .impact-report-hero, .project-hero, .project-phases, .partner-levels, .involve-hero, .volunteer-form, .impact-section, .testimonials { padding: 64px 24px !important; }
-    .donate-hero { padding: 64px 24px; }
-    .donate-hero h1 { font-size: 36px; }
     .project-hero h1 { font-size: 36px; }
     .impact-report-hero h1 { font-size: 34px; }
     nav { padding: 0 20px; }
@@ -715,7 +710,7 @@
     .section-title { font-size: 28px; }
     .impact-num, .perf-bar-pct { font-size: 40px; }
     .hero-stat-num { font-size: 22px; }
-    .donate-hero h1, .project-hero h1, .impact-report-hero h1 { font-size: 30px; }
+    .project-hero h1, .impact-report-hero h1 { font-size: 30px; }
     .testimonial-grid { gap: 16px; }
     .insights-grid { grid-template-columns: 1fr; gap: 16px; }
     /* Impact section padding */
@@ -1670,25 +1665,19 @@
 
 <!-- ════════════════════════════ DONATE ════════════════════════════ -->
 <div id="page-donate" class="page">
-  <div class="donate-hero">
-    <div class="section-label" style="color:rgba(255,255,255,0.7)">Make a Difference</div>
-    <h1>Become a Founding Partner</h1>
-    <p>Every contribution — of any size — builds the foundation of the Kpotamé Rural Health Center and the future it represents.</p>
-  </div>
-
   <section id="laying-the-foundation" class="foundation" aria-labelledby="foundation-title">
 
     <div class="foundation-band">
       <div class="foundation-inner foundation-top">
         <div class="foundation-copy">
-          <div class="section-label">The first stage</div>
-          <h2 class="foundation-title" id="foundation-title">Laying the Foundation</h2>
+          <div class="section-label">Become a Founding Partner</div>
+          <h1 class="foundation-title" id="foundation-title">Laying the Foundation</h1>
           <p class="foundation-promise">Seven stages build the Kpotamé health center. This campaign lays the first.</p>
           <p class="foundation-intro">Every wall, roof and room of the Kpotamé health center will rest on its foundation, so that is where the building begins. Lot 1 covers clearing and setting up the site, excavating the trenches and pits, and the reinforced concrete and masonry that carry everything above it.</p>
         </div>
 
         <div class="foundation-visual">
-          <img class="foundation-photo" src="assets/photos/construction-site.webp" alt="The cleared ground for the Kpotamé health center: bare red earth marked by machine tracks, a trench of standing water in front, trees and village houses behind." width="1600" height="1600" loading="lazy" decoding="async">
+          <img class="foundation-photo" src="assets/photos/construction-site.webp" alt="The cleared ground for the Kpotamé health center: bare red earth marked by machine tracks, a trench of standing water in front, trees and village houses behind." width="1600" height="1600" fetchpriority="high" decoding="async">
           <!-- NOT CONFIRMED: APED has not approved this goal figure ($40,300, goal_mode all_in). content/campaign.json has goal_confirmed: false. Do not publish until it is true. -->
           <div class="foundation-card">
             <h3 class="foundation-card-kicker">Foundation campaign<span>Stage 1 of 7</span></h3>
