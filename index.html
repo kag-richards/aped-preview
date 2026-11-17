@@ -9,7 +9,7 @@
 <meta name="description" content="APED is closing the gap on rural healthcare in southern Togo, West Africa — building the Kpotamé Health Center for 18,000 people across 17 underserved villages.">
 <meta name="keywords" content="APED Association, Togo nonprofit, Kpotamé health center, rural healthcare Togo, Avé Prefecture, maternal health, children's education, women's empowerment, West Africa NGO, donate Togo healthcare">
 <meta name="author" content="APED Association">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://apedassociation.org/">
 
 <!-- Open Graph (LinkedIn, Facebook, WhatsApp, Slack link previews) -->
@@ -775,6 +775,32 @@
     .foundation-stages .stage-status { order: -1; margin: 0 0 10px; }
   }
 
+  /* ── Band 1b: white. The building, from APED's own drawings. ── */
+  .foundation-building { background: var(--white); padding: 104px 80px 112px; }
+  .building-head { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); column-gap: 80px; align-items: end; margin-bottom: 48px; }
+  .building-head .section-label { grid-column: 1 / -1; color: var(--teal); }
+  .building-title { font-family: var(--serif); font-size: clamp(34px, 3.4vw, 46px); line-height: 1.1; color: var(--blue); font-weight: 700; letter-spacing: -0.3px; }
+  .building-intro { font-size: 16px; line-height: 1.8; color: var(--gray-700); max-width: 56ch; }
+  .building-render { margin: 0; }
+  .building-render img { display: block; width: 100%; aspect-ratio: 1440 / 700; object-fit: cover; object-position: 50% 40%; border-radius: var(--radius-lg); }
+  .building-render figcaption, .building-plan figcaption p { font-size: 13px; line-height: 1.6; color: var(--gray-500); }
+  .building-render figcaption { margin-top: 14px; }
+
+  /* The two drawings: the floor plan (what is inside) and the foundation plan (this campaign). */
+  .building-plans { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 56px; margin-top: 72px; align-items: start; }
+  .building-plan { margin: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .building-sheet { background: var(--off-white); border: 1px solid rgba(26,58,107,0.10); border-radius: var(--radius-lg); padding: 20px; }
+  .building-sheet img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+  .building-plan h3 { font-family: var(--serif); font-size: 26px; line-height: 1.2; color: var(--blue); font-weight: 700; margin-bottom: 18px; }
+  .building-rooms { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px 28px; margin: 0; }
+  .building-rooms div { padding-left: 16px; border-left: 3px solid var(--teal-light); }
+  .building-rooms dt { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--teal); margin-bottom: 4px; }
+  .building-rooms dd { margin: 0; font-size: 15px; line-height: 1.6; color: var(--gray-700); }
+  .building-plan.is-campaign .building-sheet { border: 2px solid var(--teal); }
+  .building-plan.is-campaign h3 { margin-bottom: 10px; }
+  .building-plan.is-campaign p { font-size: 15px; color: var(--gray-700); max-width: 40ch; }
+  .building-plan .tag { display: inline-block; margin-bottom: 12px; padding: 1px 9px; border: 1px solid var(--teal); border-radius: 100px; font-size: 10px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--teal); }
+
   /* ── Band 2: cream. Lay the First Block, and the estimate folded away. ── */
   .foundation-detail { background: var(--off-white); padding: 72px 80px; }
   .foundation-detail-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 72px; align-items: start; }
@@ -849,9 +875,16 @@
     .foundation-ladder { margin-top: 72px; }
     .foundation-detail-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
     .foundation-block { position: static; }
+    .building-plans { gap: 40px; }
   }
 
   @media (max-width: 900px) {
+    .foundation-building { padding: 64px 24px 72px; }
+    .building-head { grid-template-columns: minmax(0, 1fr); row-gap: 16px; margin-bottom: 32px; }
+    .building-render img { aspect-ratio: 4 / 3; object-position: 55% 50%; }
+    .building-plans { margin-top: 48px; gap: 48px; }
+    .building-plans { grid-template-columns: minmax(0, 1fr); }
+    .building-sheet { padding: 12px; }
     .foundation-band { padding: 64px 24px 56px; }
     .foundation-top { grid-template-columns: minmax(0, 1fr); gap: 40px; }
     .foundation-promise { font-size: 21px; max-width: none; }
@@ -877,6 +910,10 @@
 
   @media (max-width: 600px) {
     .foundation-band { padding: 56px 20px 48px; }
+    .foundation-building { padding: 56px 20px 64px; }
+    .building-title { font-size: 32px; }
+    .building-plan h3 { font-size: 23px; }
+    .building-rooms { grid-template-columns: minmax(0, 1fr); }
     .foundation-title { font-size: 38px; margin-bottom: 22px; }
     .foundation-promise { font-size: 19px; }
     .foundation-intro { font-size: 15px; }
@@ -1736,6 +1773,42 @@
             <span class="stage-status">Next</span>
           </li>
         </ol>
+      </div>
+    </div><div class="foundation-building" aria-labelledby="building-title">
+      <div class="foundation-inner">
+        <div class="building-head">
+          <div class="section-label">The building</div>
+          <h2 class="building-title" id="building-title">What your gift will build</h2>
+          <p class="building-intro">These are the health center&#39;s own drawings, prepared for APED. One level, about 28 by 34 meters, with wards for mothers, children, women and men, a delivery room, a pharmacy and a laboratory.</p>
+        </div>
+
+        <figure class="building-render">
+          <img src="assets/photos/health-center-front.jpg" alt="Drawing of the finished Kpotamé health center: a long, white single-story building with a red tile roof, a gabled entrance marked Centre de Santé with two red crosses, wide steps, and palm trees on each side." width="1440" height="773" loading="lazy" decoding="async">
+          <figcaption>Artist&#39;s impression of the finished health center, Kpotamé, Assahoun, Togo.</figcaption>
+        </figure>
+
+        <div class="building-plans">
+          <figure class="building-plan">
+            <div class="building-sheet"><img src="assets/photos/health-center-floor-plan.jpg" alt="Floor plan of the health center, labeled in French: wards along the top and right, a central patio, consultation rooms on the left, and the pharmacy and veranda at the bottom right." width="1151" height="1200" loading="lazy" decoding="async"></div>
+            <figcaption>
+              <h3>Inside</h3>
+              <dl class="building-rooms">
+                <div><dt>Mothers and newborns</dt><dd>Delivery room, maternity ward, midwife, prenatal consultations</dd></div>
+                <div><dt>Children</dt><dd>Pediatric ward</dd></div>
+                <div><dt>Everyday care</dt><dd>Consultation, nurse, treatment room, minor surgery, women&#39;s ward, men&#39;s ward</dd></div>
+                <div><dt>Pharmacy and laboratory</dt><dd>Pharmacy and its store, laboratory, sample collection</dd></div>
+              </dl>
+            </figcaption>
+          </figure>
+          <figure class="building-plan is-campaign">
+            <div class="building-sheet"><img src="assets/photos/health-center-foundation-plan.jpg" alt="The foundation plan of the health center: the outline of every wall drawn on a measured grid." width="984" height="1100" loading="lazy" decoding="async"></div>
+            <figcaption>
+              <span class="tag">This campaign</span>
+              <h3>This campaign lays this</h3>
+              <p>The foundation plan. Every room above sits on what is drawn here, and building it is Lot 1, the first stage this campaign raises for.</p>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </div>
 
